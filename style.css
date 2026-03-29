@@ -1,0 +1,73 @@
+:root {
+    --primary-green: #1DB954;
+    --nav-bg: rgba(15, 15, 15, 0.95);
+    --card-bg: #1e1e1e;
+    --player-bg: #0f0f0f;
+}
+
+[data-bs-theme="light"] {
+    --nav-bg: rgba(255, 255, 255, 0.95);
+    --card-bg: #ffffff;
+    --player-bg: #f8f9fa;
+}
+
+body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    transition: all 0.3s ease;
+}
+
+.x-small { font-size: 0.75rem; }
+
+/* Mega Menu Styles */
+@media all and (min-width: 992px) {
+    .has-megamenu { position: static; }
+    .mega-menu { left: 5%; right: 5%; width: 90%; border-radius: 15px; margin-top: 0; }
+}
+
+.custom-nav { background: var(--nav-bg) !important; backdrop-filter: blur(15px); }
+.bg-custom { background: var(--card-bg); border: 1px solid rgba(255,255,255,0.1); color: inherit; }
+
+/* Information Sidebar Box */
+.info-box {
+    background: var(--card-bg);
+    border-radius: 20px;
+    border: 1px solid rgba(255,255,255,0.1) !important;
+}
+
+/* Music Cards */
+.music-card {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+.music-card:hover { transform: scale(1.03); }
+.music-card img { aspect-ratio: 1/1; object-fit: cover; border-radius: 12px; }
+
+/* Player Bar YT Style */
+.player-bar {
+    background: var(--player-bg);
+    height: 95px;
+    z-index: 2000;
+}
+
+.btn-play-main {
+    background: white;
+    color: black;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+[data-bs-theme="light"] .btn-play-main { background: black; color: white; }
+
+.btn-skip { background: none; border: none; color: inherit; }
+.player-seek { accent-color: #ff0000; }
+.volume-slider { accent-color: var(--primary-green); }
+
+.animate-up { animation: slideUp 0.4s ease-out; }
+@keyframes slideUp { from { transform: translateY(100%); } to { transform: translateY(0); } }
