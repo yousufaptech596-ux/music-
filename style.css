@@ -71,3 +71,113 @@ body {
 
 .animate-up { animation: slideUp 0.4s ease-out; }
 @keyframes slideUp { from { transform: translateY(100%); } to { transform: translateY(0); } }
+/* Footer Styles */
+.footer {
+    background-color: #0d1117; /* Dark background to match your site */
+    color: #ffffff;
+    padding: 60px 0 20px 0;
+    font-family: 'Poppins', sans-serif;
+    border-top: 2px solid #1f2937;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 40px;
+    padding: 0 20px;
+}
+
+.footer-col h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+.footer-col h3 span {
+    color: #00d2ff; /* Your theme blue */
+}
+
+.footer-col h4 {
+    font-size: 18px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.footer-col h4::after {
+    content: '';
+    width: 30px;
+    height: 2px;
+    background: #00d2ff;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+}
+
+.footer-col p {
+    color: #9ca3af;
+    line-height: 1.6;
+    font-size: 14px;
+}
+
+.footer-col ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-col ul li {
+    margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+    color: #9ca3af;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.footer-col ul li a:hover {
+    color: #00d2ff;
+    padding-left: 5px;
+}
+
+/* Newsletter Form */
+.newsletter-form {
+    display: flex;
+    margin-top: 15px;
+}
+
+.newsletter-form input {
+    padding: 10px;
+    border: none;
+    background: #1f2937;
+    color: white;
+    border-radius: 4px 0 0 4px;
+    width: 100%;
+}
+
+.newsletter-form button {
+    padding: 10px 20px;
+    background: #00d2ff;
+    border: none;
+    color: #000;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 0 4px 4px 0;
+    transition: 0.3s;
+}
+
+.newsletter-form button:hover {
+    background: #3a7bd5;
+    color: white;
+}
+
+/* Bottom Bar */
+.footer-bottom {
+    text-align: center;
+    margin-top: 50px;
+    padding-top: 20px;
+    border-top: 1px solid #1f2937;
+    font-size: 13px;
+    color: #6b7280;
+}
